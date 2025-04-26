@@ -27,21 +27,20 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class             instance    title       tags mask     isfloating   monitor */
-	{ "porymap",         NULL,       NULL,       1 << 1,       1,            0 },
-    { "KeePassXC",       NULL,       NULL,       1 << 7,       0,            0 },
-	{ "Pavucontrol",     NULL,       NULL,       1 << 8,       0,            0 },
-	{ "pavucontrol",     NULL,       NULL,       1 << 8,       0,            0 },
-	{ "Vieb",            NULL,       NULL,       1 << 0,       0,            1 },
-	{ "firefox",         NULL,       NULL,       1 << 1,       0,            1 },
-	{ "librewolf",       NULL,       NULL,       1 << 0,       0,            1 },
-	{ "Tor Browser",     NULL,       NULL,       1 << 2,       0,            1 },
-	{ "Zathura",         NULL,       NULL,       1 << 3,       0,            1 },
-	{ "mpv",             NULL,       NULL,       1 << 8,       0,            1 },
-	{ "Gimp",            NULL,       NULL,       0,            1,           -1 },
-	{ "onscripter-en",   NULL,       NULL,       0,            0,           -1 },
-	{ "onscripter-en",   NULL,       NULL,       0,            0,           -1 },
-	{ ".*.exe",           NULL,       NULL,       0,            0,           -1 },
+	/* class             instance    title          tags mask     isfloating   monitor */
+        { NULL,              NULL,       "screen_user", 1 << 0,       0,            0 },
+        { NULL,              NULL,       "screen_ops",  1 << 1,       0,            0 },
+        { NULL,              NULL,       "screen_apps", 1 << 2,       0,            0 },
+        { "KeePassXC",       NULL,       NULL,          1 << 7,       0,            0 },
+	{ "Pavucontrol",     NULL,       NULL,          1 << 8,       0,            0 },
+	{ "pavucontrol",     NULL,       NULL,          1 << 8,       0,            0 },
+	{ "Vieb",            NULL,       NULL,          1 << 0,       0,            1 },
+	{ "firefox",         NULL,       NULL,          1 << 1,       0,            1 },
+	{ "librewolf",       NULL,       NULL,          1 << 0,       0,            1 },
+	{ "Tor Browser",     NULL,       NULL,          1 << 2,       0,            1 },
+	{ "Zathura",         NULL,       NULL,          1 << 3,       0,            1 },
+	{ "mpv",             NULL,       NULL,          1 << 8,       0,            1 },
+	{ "Gimp",            NULL,       NULL,          0,            1,           -1 },
 };
 
 /* layout(s) */
